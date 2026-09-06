@@ -3,11 +3,13 @@ Allow: /$
 Allow: /about-us.html
 Allow: /contact.html
 Allow: /solo-practice.html
+Allow: /solo-practice.png
 Allow: /multi-doctor-clinics.html
 Allow: /multi-doctor-clinics.png
 Allow: /styles.css
 Allow: /sitemap.xml
 Allow: /og-image.png
+Allow: /resources/
 Disallow: /
 
 Sitemap: https://clinvision.in/sitemap.xml

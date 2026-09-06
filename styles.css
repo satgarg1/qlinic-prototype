@@ -1446,6 +1446,62 @@ a { color: inherit; }
 .dark-panel.tone-cyan .dark-cell .point-lead { color: #f2f8f9; }
 .dark-panel.tone-cyan .dark-cell .point-support { color: #93a8ac; }
 
+/* ---------------- Resources articles ----------------
+   A distinct content type from the segment/landing pages above --
+   informational intent, not a conversion page, so its own template
+   rather than reusing .pg-section/.hero-stage. Gold is Resources' own
+   identity color: pulled from the existing wordmark bar (#c9973e,
+   already sitewide) rather than inventing a new one, and distinct from
+   every segment tone and the purple/amber reserved for Polyclinics/
+   Diagnostic centers. Reuses the site's real .mkt-nav/.segment-menu
+   nav pattern (a second .nav-segment-wrap for "Resources", identical
+   markup to "Solutions"), .btn/.btn-accent for CTAs, and .mkt-footer --
+   only the article body below the nav is new. */
+.article-hero { max-width: 760px; margin: 0 auto; padding: 64px 6vw 0; text-align: center; }
+.article-eyebrow { font-size: 16px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #8a6420; margin-bottom: 18px; }
+.article-h1 { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 600; font-size: clamp(32px, 4vw, 46px); line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 18px; color: var(--black); }
+.article-sub { font-size: 21px; color: var(--grey-700); line-height: 1.5; max-width: 620px; margin: 0 auto 18px; }
+.read-time { display: inline-flex; align-items: center; gap: 7px; font-size: 15px; color: var(--grey-500); font-weight: 600; }
+.read-time svg { width: 14px; height: 14px; }
+
+.hero-illo { max-width: 900px; margin: 40px auto 0; padding: 0 6vw; text-align: center; }
+.hero-illo img { max-width: 420px; margin: 0 auto; display: block; }
+
+.article-body { max-width: 680px; margin: 0 auto; padding: 56px 6vw 40px; }
+.article-body > p { font-size: 20px; line-height: 1.7; color: #333; margin-bottom: 26px; }
+.kw { color: #8a6420; font-weight: 600; }
+.quick-take { background: #faf1e0; border-left: 4px solid #c9973e; border-radius: 4px 14px 14px 4px; padding: 22px 26px; margin: 0 0 42px; }
+.quick-take-label { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 700; font-size: 15px; text-transform: uppercase; letter-spacing: 0.08em; color: #8a6420; margin-bottom: 8px; }
+.quick-take p { font-size: 18.5px; line-height: 1.6; color: #40372a; margin: 0; }
+
+.article-body h2 { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 600; font-size: clamp(24px, 2.4vw, 29px); letter-spacing: -0.01em; margin: 48px 0 18px; color: var(--black); }
+
+.pull-quote { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 500; font-style: italic; font-size: 27px; line-height: 1.45; color: var(--black); border-left: 3px solid #c9973e; padding-left: 26px; margin: 36px 0; }
+
+.num-list { display: flex; flex-direction: column; gap: 24px; margin: 30px 0; }
+.num-item { display: flex; gap: 18px; }
+.num-item .n { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 700; font-size: 24px; color: #8a6420; flex-shrink: 0; width: 30px; }
+.num-item .t p:first-child { font-weight: 600; font-size: 19px; margin-bottom: 4px; color: var(--black); }
+.num-item .t p:last-child { font-size: 17px; color: var(--grey-700); line-height: 1.55; }
+
+.mid-illo { margin: 48px auto; max-width: 620px; text-align: center; }
+.mid-illo img { max-width: 420px; margin: 0 auto; display: block; }
+
+.closing-card { background: #12162b; border-radius: 20px; padding: 40px 34px; margin-top: 50px; color: #fff; }
+.closing-card .eyebrow { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #e8c983; margin-bottom: 12px; }
+.closing-card h3 { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 600; font-size: 26px; margin-bottom: 14px; }
+.closing-card p { font-size: 17.5px; line-height: 1.6; color: #c9c9d1; margin-bottom: 22px; }
+.closing-card a.btn-accent { display: inline-block; }
+.related { max-width: 680px; margin: 0 auto; padding: 0 6vw 70px; }
+.related h4 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--grey-500); margin-bottom: 14px; }
+.related a { display: block; font-weight: 600; color: var(--accent); text-decoration: none; padding: 10px 0; border-top: 1px solid var(--grey-300); }
+.attribution { max-width: 680px; margin: 0 auto; padding: 0 6vw 40px; font-size: 12px; color: var(--grey-500); }
+
+@media (max-width: 700px) {
+  .num-item { flex-direction: column; gap: 6px; }
+  .num-item .n { width: auto; }
+}
+
 /* ---------------- Contact page: two-pane dark band ----------------
    Same "image left, form right" pattern as login.html's own two-pane
    auth-shell, but under its own classes (not .auth-*) since this stays
