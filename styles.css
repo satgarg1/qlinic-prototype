@@ -1457,7 +1457,15 @@ a { color: inherit; }
    nav pattern (a second .nav-segment-wrap for "Resources", identical
    markup to "Solutions"), .btn/.btn-accent for CTAs, and .mkt-footer --
    only the article body below the nav is new. */
-.article-hero { max-width: 760px; margin: 0 auto; padding: 64px 6vw 0; text-align: center; }
+/* Gold ambient glow behind the hero -- every other identity color on the
+   site (teal, cyan, rose) shows up as a colored wash behind its section,
+   not just accent text; Resources had no such wash, so the gold identity
+   only showed up in small text, reading as "missing" against how present
+   the other colors are elsewhere. Sized/positioned like every other
+   .hero-glow on the site, just gold. */
+.article-hero { position: relative; overflow: hidden; max-width: 760px; margin: 0 auto; padding: 64px 6vw 0; text-align: center; }
+.article-hero-glow { position: absolute; width: 900px; height: 900px; border-radius: 50%; top: -420px; left: 50%; transform: translateX(-50%); background: radial-gradient(circle, rgba(201, 151, 62, 0.14) 0%, rgba(201, 151, 62, 0) 68%); pointer-events: none; z-index: 0; }
+.article-hero > * { position: relative; z-index: 1; }
 .article-eyebrow { font-size: 16px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #8a6420; margin-bottom: 18px; }
 .article-h1 { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 600; font-size: clamp(32px, 4vw, 46px); line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 18px; color: var(--black); }
 .article-sub { font-size: 21px; color: var(--grey-700); line-height: 1.5; max-width: 620px; margin: 0 auto 18px; }
@@ -1489,6 +1497,11 @@ a { color: inherit; }
 
 .closing-card { background: #12162b; border-radius: 20px; padding: 40px 34px; margin-top: 50px; color: #fff; }
 .closing-card .eyebrow { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #e8c983; margin-bottom: 12px; }
+/* Same fix as .hero-stage/.contact-dark-band above -- the shared
+   .eyebrow::before dot is positioned for a left-aligned label on a
+   light background; left as-is here it showed as a stray blue circle
+   in front of this centered, dark-background label. */
+.closing-card .eyebrow::before { display: none; }
 .closing-card h3 { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 600; font-size: 26px; margin-bottom: 14px; }
 .closing-card p { font-size: 17.5px; line-height: 1.6; color: #c9c9d1; margin-bottom: 22px; }
 .closing-card a.btn-accent { display: inline-block; }

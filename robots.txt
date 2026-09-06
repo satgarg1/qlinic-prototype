@@ -1,9 +1,13 @@
 User-agent: *
 Allow: /$
+Allow: /about-us
 Allow: /about-us.html
+Allow: /contact
 Allow: /contact.html
+Allow: /solo-practice
 Allow: /solo-practice.html
 Allow: /solo-practice.png
+Allow: /multi-doctor-clinics
 Allow: /multi-doctor-clinics.html
 Allow: /multi-doctor-clinics.png
 Allow: /styles.css
