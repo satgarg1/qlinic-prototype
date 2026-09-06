@@ -130,7 +130,10 @@
   <!-- PROBLEM -- 4 numbered facts, rose tone, staggered reveal -->
   <section class="pg-section tone-rose">
     <div class="pg-glow" aria-hidden="true"></div>
-    <div class="pg-head reveal">
+    <!-- Widened from the shared 920px -- this headline runs longer than
+         Solo practice's own Problem headline and was wrapping to 2
+         lines at the default width. -->
+    <div class="pg-head reveal" style="max-width:1150px;">
       <div class="pg-eyebrow">The problem</div>
       <h2 class="pg-h2">More doctors means more questions. All of them land on reception.</h2>
     </div>
@@ -190,9 +193,12 @@
        row headings instead of a per-column numeral (see styles.css). -->
   <section class="dark-panel tone-cyan">
     <div class="dark-panel-glow" aria-hidden="true"></div>
-    <div class="dark-panel-head reveal">
+    <!-- Widened from the shared 680px, and the h2's own font-size capped
+         a bit lower than the shared 41px -- at the default width/size
+         this heading was wrapping to 2 lines. -->
+    <div class="dark-panel-head reveal" style="max-width:900px;">
       <div class="dark-panel-eyebrow">What's included for you</div>
-      <h2>Everything a multi doctor clinic needs.</h2>
+      <h2 style="font-size:clamp(24px, 2.6vw, 34px);">Everything a multi doctor clinic needs.</h2>
     </div>
     <div class="dark-panel-body">
 
