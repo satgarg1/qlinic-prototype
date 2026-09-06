@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Clinic Management Software for Multi Doctor Clinics | ClinVision</title>
+<meta name="description" content="ClinVision gives every doctor their own queue, with the front desk seeing every doctor together in one shared view." />
+<link rel="canonical" href="https://clinvision.in/multi-doctor-clinics.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ClinVision" />
+<meta property="og:title" content="Clinic Management Software for Multi Doctor Clinics | ClinVision" />
+<meta property="og:description" content="Every doctor gets their own queue. The front desk sees all of them together, in one shared view." />
+<meta property="og:url" content="https://clinvision.in/multi-doctor-clinics.html" />
+<meta property="og:image" content="https://clinvision.in/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Clinic Management Software for Multi Doctor Clinics | ClinVision" />
+<meta name="twitter:description" content="Every doctor gets their own queue. The front desk sees all of them together, in one shared view." />
+<meta name="twitter:image" content="https://clinvision.in/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=optional" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231e1b4b'/%3E%3Ctext x='50' y='70' font-family='Georgia, serif' font-size='60' font-weight='700' fill='%23fff' text-anchor='middle'%3EC%3C/text%3E%3Crect x='30' y='80' width='40' height='7' rx='3' fill='%23c9973e'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css?v=308" />
+</head>
+<body>
+
+  <!-- Reached only by hovering "Solutions" in the nav below -- see
+       solo-practice.html's own nav comment for how the menu works.
+       BACKLOG.md's segment-page note now covers only Polyclinics and
+       Diagnostic centers -- this page ships Multi-doctor clinics, the
+       2nd of 4 segments. -->
+  <nav class="mkt-nav">
+    <a href="index.html" class="brand">
+      <span class="brand-top">
+        <span class="brand-word-wrap">
+          <span class="brand-word">ClinVision</span>
+          <span class="brand-word-bar"></span>
+        </span>
+      </span>
+      <span class="brand-tagline">Where clinics run better</span>
+    </a>
+    <div class="mkt-nav-links">
+      <div class="nav-segment-wrap" tabindex="0">
+        <button type="button" class="nav-hover-trigger">
+          Solutions
+          <svg class="chevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="segment-menu">
+          <div class="segment-menu-inner">
+            <a class="segment-item" href="solo-practice.html">
+              <span class="segment-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6"/></svg></span>
+              <span><p class="segment-item-title">Solo practice</p><p class="segment-item-desc">One doctor. Still runs like clockwork.</p></span>
+            </a>
+            <a class="segment-item" href="multi-doctor-clinics.html">
+              <span class="segment-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <span><p class="segment-item-title">Multi-doctor clinics</p><p class="segment-item-desc">Every doctor's queue, one shared view.</p></span>
+            </a>
+            <a class="segment-item disabled" href="#" onclick="return false;">
+              <span class="segment-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v15"/><path d="M12 10h7a1 1 0 0 1 1 1v10"/><path d="M8 8h.01M8 11h.01M8 14h.01M8 17h.01"/><path d="M15 13h.01M15 16h.01M15 19h.01"/></svg></span>
+              <span><p class="segment-item-title">Polyclinics</p><p class="segment-item-desc">Many specialties, one front desk.</p></span>
+            </a>
+            <a class="segment-item disabled" href="#" onclick="return false;">
+              <span class="segment-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6"/><path d="M10 3v6.5L4.5 19a1.5 1.5 0 0 0 1.3 2.3h12.4a1.5 1.5 0 0 0 1.3-2.3L14 9.5V3"/><path d="M7.5 15h9"/></svg></span>
+              <span><p class="segment-item-title">Diagnostic centers</p><p class="segment-item-desc">Every walk-in, tracked and billed.</p></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="about-us.html" style="font-weight:600;font-size:15px;color:var(--black);text-decoration:none;">About us</a>
+      <a href="contact.html" style="font-weight:600;font-size:15px;color:var(--black);text-decoration:none;">Contact us</a>
+      <a href="login.html" class="btn btn-accent">Log in</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="mkt-fullbleed" style="background:var(--mkt-paper);">
+    <div class="hero-stage centered">
+      <!-- Cyan, this segment's own identity color -- not Solo practice's
+           teal, not the purple/amber reserved for Polyclinics/Diagnostic
+           centers. Same shape/animation as every other segment hero. -->
+      <div class="hero-glow" aria-hidden="true" style="background: radial-gradient(circle, rgba(8, 145, 178, 0.13) 0%, rgba(8, 145, 178, 0) 68%);"></div>
+      <div class="content">
+        <div class="eyebrow hero-fx" id="heroFxEyebrow" style="color:#0e7490; opacity:1; font-weight:800;">For multi-doctor clinics</div>
+        <h1 class="mkt-h1">
+          <span class="hero-line hero-line-last hero-fx" id="heroFxLine1">Every doctor sees their patients clearly.</span>
+          <!-- Runs longer than Solo practice's own resolve line -- at
+               the shared 46px cap it wraps to 3 lines no matter where a
+               manual break falls, since even half the sentence exceeds
+               the 560px content column at that size. Capped lower here,
+               specific to this page's longer sentence, with a manual
+               break at the natural clause so it holds at exactly 2. -->
+          <span class="hero-line-resolve hero-fx hero-fx-pop" id="heroFxResolve" style="white-space:normal; font-size:clamp(26px, 3.1vw, 38px);">It's their own day they<br />can't check without asking.</span>
+        </h1>
+        <p class="mkt-sub hero-sub hero-fx" id="heroFxSub">Two doctors or ten, every specialty under one roof. ClinVision gives each doctor their own queue and the front desk one shared view of all of them, so every doctor can check their own day without asking anyone.</p>
+        <div class="mkt-cta-row hero-fx" id="heroFxCta">
+          <a href="contact.html" class="btn btn-accent btn-large">Book a demo</a>
+          <a href="login.html" class="btn btn-ghost btn-large">Log in</a>
+        </div>
+      </div>
+      <div class="hero-visual hero-fx" id="heroFxImage">
+        <img src="multi-doctor-clinics.png" alt="A front desk with a shared screen showing three doctors' queues (Dr. A, B, C), consultation room doors, a doctor checking a tablet reading Today: 4 pending, and a patient in the waiting area checking her phone with her queue number in a thought bubble." />
+        <div class="hero-visual-caption hero-fx" id="heroFxCaption">Illustrative &mdash; the front desk sees every doctor's queue on one shared screen</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var seq = [
+        ['heroFxEyebrow', 0],
+        ['heroFxImage', 300],
+        ['heroFxLine1', 250],
+        ['heroFxResolve', 700],
+        ['heroFxSub', 1300],
+        ['heroFxCaption', 1450],
+        ['heroFxCta', 1550]
+      ];
+      seq.forEach(function (pair) {
+        var id = pair[0], delay = pair[1];
+        window.setTimeout(function () {
+          var el = document.getElementById(id);
+          if (el) el.classList.add('show');
+        }, delay);
+      });
+    })();
+  </script>
+
+  <!-- PROBLEM -- 4 numbered facts, rose tone, staggered reveal -->
+  <section class="pg-section tone-rose">
+    <div class="pg-glow" aria-hidden="true"></div>
+    <div class="pg-head reveal">
+      <div class="pg-eyebrow">The problem</div>
+      <h2 class="pg-h2">More doctors means more questions. All of them land on reception.</h2>
+    </div>
+    <div class="item-row" id="problemRow" style="--cols:4;">
+      <div class="item-card"><div class="item-num">01</div><p class="item-lead">Doctors ask reception the same questions, over and over.</p><p class="item-support">How many are waiting. Who's next. Is anyone running late.</p></div>
+      <div class="item-card"><div class="item-num">02</div><p class="item-lead">Every doctor's queue lives in a different person's head.</p><p class="item-support">Reception is the only place all of it comes together, if it comes together at all.</p></div>
+      <div class="item-card"><div class="item-num">03</div><p class="item-lead">A doctor stepping away for ten minutes still has to be told to reception.</p><p class="item-support">And told again the moment they're back.</p></div>
+      <div class="item-card"><div class="item-num">04</div><p class="item-lead">The more doctors you add, the more reception becomes a call center.</p><p class="item-support">Answering for people instead of helping the ones actually in front of them.</p></div>
+    </div>
+  </section>
+
+  <!-- FIX -- 3 audience columns, each once, each with its own numbered
+       stack of points; cyan tone. New pattern (.audience-head/.point-list),
+       see styles.css's comment above these classes. -->
+  <section class="pg-section tone-cyan">
+    <div class="pg-glow" aria-hidden="true"></div>
+    <div class="pg-head reveal">
+      <div class="pg-eyebrow">The fix</div>
+      <h2 class="pg-h2">One shared system. Nobody has to ask anybody.</h2>
+    </div>
+    <div class="item-row" id="fixRow" style="--cols:3;">
+
+      <div class="item-card">
+        <div class="audience-head">For Each Doctor</div>
+        <div class="point-list">
+          <div class="point"><div class="point-num">1</div><div><p class="point-lead">Open your own schedule anytime.</p><p class="point-support">See who's waiting and pending, no need to ask.</p></div></div>
+          <div class="point"><div class="point-num">2</div><div><p class="point-lead">Your queue and pending count, always visible.</p><p class="point-support">No asking.</p></div></div>
+          <div class="point"><div class="point-num">3</div><div><p class="point-lead">Reception doesn't have to interrupt you either.</p><p class="point-support">Mid consultation, to relay something you could've checked yourself.</p></div></div>
+          <div class="point"><div class="point-num">4</div><div><p class="point-lead">See your own day clearly.</p><p class="point-support">So nothing slips while you're with a patient.</p></div></div>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="audience-head">For the Front Desk</div>
+        <div class="point-list">
+          <div class="point"><div class="point-num">1</div><div><p class="point-lead">A doctor's question, answered by the screen.</p><p class="point-support">Instead of by you.</p></div></div>
+          <div class="point"><div class="point-num">2</div><div><p class="point-lead">Every doctor's status, one screen.</p><p class="point-support">No memorizing who's where.</p></div></div>
+          <div class="point"><div class="point-num">3</div><div><p class="point-lead">Fewer questions to answer.</p><p class="point-support">More time for the patients actually in front of them.</p></div></div>
+          <div class="point"><div class="point-num">4</div><div><p class="point-lead">Two patients walking in for two different doctors at once doesn't cause chaos.</p><p class="point-support">Each one goes straight into the right doctor's queue, correctly, immediately.</p></div></div>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="audience-head">For the Owner</div>
+        <div class="point-list">
+          <div class="point"><div class="point-num">1</div><div><p class="point-lead">A calmer front desk.</p><p class="point-support">Nobody's chasing status updates all day.</p></div></div>
+          <div class="point"><div class="point-num">2</div><div><p class="point-lead">A calmer clinic.</p><p class="point-support">Because information isn't stuck behind one person.</p></div></div>
+          <div class="point"><div class="point-num">3</div><div><p class="point-lead">One place for every doctor's details.</p><p class="point-support">Fees, specialties, and holidays, all managed together instead of separately.</p></div></div>
+          <div class="point"><div class="point-num">4</div><div><p class="point-lead">Growing the clinic doesn't mean growing the chaos.</p><p class="point-support">The same one system, no matter how many doctors it's coordinating.</p></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED -- dark cyan contrast panel, grouped under 2 shared
+       row headings instead of a per-column numeral (see styles.css). -->
+  <section class="dark-panel tone-cyan">
+    <div class="dark-panel-glow" aria-hidden="true"></div>
+    <div class="dark-panel-head reveal">
+      <div class="dark-panel-eyebrow">What's included for you</div>
+      <h2>Everything a multi doctor clinic needs.</h2>
+    </div>
+    <div class="dark-panel-body">
+
+      <div class="dark-row-group">
+        <div class="dark-row-heading reveal">Every doctor's day, without asking</div>
+        <div class="dark-row" id="includedRow1">
+          <div class="dark-col"><div class="dark-cell"><p class="point-lead">Full schedule and pending count, one tap away.</p><p class="point-support">For every doctor, updated the moment anything changes.</p></div></div>
+          <div class="dark-col"><div class="dark-cell"><p class="point-lead">One shared queue, live for every doctor.</p><p class="point-support">Availability updates the moment it happens, everywhere it's shown.</p></div></div>
+          <div class="dark-col"><div class="dark-cell"><p class="point-lead">Every doctor's queue runs on its own.</p><p class="point-support">Without daily hand holding from reception.</p></div></div>
+          <div class="dark-col"><div class="dark-cell"><p class="point-lead">Pending patients, visible any time.</p><p class="point-support">Checked whenever a doctor wants, not reported secondhand.</p></div></div>
+        </div>
+      </div>
+
+      <div class="dark-row-group">
+        <div class="dark-row-heading reveal">Reception gets its time back</div>
+        <div class="dark-row" id="includedRow2">
+          <div class="dark-col"><div class="dark-cell"><p class="point-lead">Fewer interruptions for status checks.</p><p class="point-support">Doctors can see it themselves, so reception doesn't have to say it.</p></div></div>
+          <div class="dark-col"><div class="dark-cell"><p class="point-lead">Patients check their own queue status.</p><p class="point-support">Not a guess from whoever's at the desk.</p></div></div>
+          <div class="dark-col"><div class="dark-cell"><p class="point-lead">Doctors and reception both get interrupted less.</p><p class="point-support">Not more, as the clinic grows.</p></div></div>
+          <div class="dark-col"><div class="dark-cell"><p class="point-lead">A front desk that's helping people.</p><p class="point-support">Not narrating status updates all day.</p></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CLOSING CTA -- paper + blue glow, matching every other segment page -->
+  <section class="final-cta centered reveal">
+    <div class="final-cta-glow" aria-hidden="true"></div>
+    <div class="final-cta-inner">
+      <h2>Many doctors.<br />One clear view.</h2>
+      <div class="mkt-cta-row">
+        <a href="contact.html" class="btn btn-accent">Book a demo</a>
+        <a href="login.html" class="btn btn-ghost">Log in to your clinic</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mkt-footer">
+    ClinVision: Intelligent Clinic Management &nbsp;·&nbsp; Email us: <a href="mailto:hello@clinvision.in">hello@clinvision.in</a> &nbsp;·&nbsp;
+    <a href="contact.html">Contact us</a> &nbsp;·&nbsp;
+    <a href="login.html">Clinic login</a>
+  </footer>
+
+  <script>
+    // Plain section headers: simple fade-up on scroll -- same pattern
+    // every other marketing page uses.
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
+      });
+    }, { threshold: 0.05 });
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+    // Problem's 4 cards stagger in -- verbatim pattern from every other
+    // segment page's own Problem/Fix rows.
+    ['problemRow'].forEach((rowId) => {
+      const cards = document.querySelectorAll('#' + rowId + ' .item-card');
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            window.setTimeout(() => entry.target.classList.add('show'), i * 150);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.05 });
+      cards.forEach((el) => obs.observe(el));
+    });
+
+    // Fix's 3 audience columns fade in as a group, then each numbered
+    // point inside cascades in turn.
+    document.querySelectorAll('#fixRow .item-card').forEach((card) => {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) { entry.target.classList.add('show'); obs.unobserve(entry.target); }
+        });
+      }, { threshold: 0.05 });
+      obs.observe(card);
+    });
+    document.querySelectorAll('#fixRow .point-list').forEach((list) => {
+      const points = list.querySelectorAll('.point');
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            window.setTimeout(() => entry.target.classList.add('show'), i * 140);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      points.forEach((el) => obs.observe(el));
+    });
+
+    // Included's cells stagger left to right within their own row.
+    document.querySelectorAll('.dark-row').forEach((row) => {
+      const cells = row.querySelectorAll('.dark-cell');
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            window.setTimeout(() => entry.target.classList.add('show'), i * 140);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      cells.forEach((el) => obs.observe(el));
+    });
+
+    // Equalize point-block heights: Fix aligns each numbered point
+    // across its 3 sibling columns by index; Included aligns each
+    // dark-row's own 4 sibling cells directly. Both equalize the whole
+    // block (lead + support together), not just the lead -- stretching
+    // the lead alone leaves dead space wedged between a short lead and
+    // its own support whenever a sibling's lead wraps to more lines.
+    (function () {
+      function equalizeFixRow() {
+        const lists = document.querySelectorAll('#fixRow .point-list');
+        if (lists.length < 2) return;
+        let maxPoints = 0;
+        lists.forEach((l) => { maxPoints = Math.max(maxPoints, l.querySelectorAll('.point').length); });
+        for (let i = 0; i < maxPoints; i++) {
+          const blocks = [];
+          lists.forEach((l) => {
+            const pts = l.querySelectorAll('.point');
+            if (pts[i]) blocks.push(pts[i]);
+          });
+          blocks.forEach((el) => { el.style.minHeight = ''; });
+          let max = 0;
+          blocks.forEach((el) => { const h = el.getBoundingClientRect().height; if (h > max) max = h; });
+          blocks.forEach((el) => { el.style.minHeight = max + 'px'; });
+        }
+      }
+      function equalizeIncludedRows() {
+        document.querySelectorAll('.dark-row').forEach((row) => {
+          const cells = row.querySelectorAll('.dark-cell');
+          cells.forEach((el) => { el.style.minHeight = ''; });
+          let max = 0;
+          cells.forEach((el) => { const h = el.getBoundingClientRect().height; if (h > max) max = h; });
+          cells.forEach((el) => { el.style.minHeight = max + 'px'; });
+        });
+      }
+      function equalizeAll() { equalizeFixRow(); equalizeIncludedRows(); }
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(equalizeAll, 150);
+      });
+      if (document.fonts && document.fonts.ready) { document.fonts.ready.then(equalizeAll); }
+      equalizeAll();
+    })();
+
+    // Equalize Problem's own item-lead heights within its one row --
+    // verbatim pattern from every other segment page.
+    (function () {
+      const leads = document.querySelectorAll('#problemRow .item-lead');
+      function equalize() {
+        leads.forEach((el) => { el.style.minHeight = ''; });
+        let max = 0;
+        leads.forEach((el) => { const h = el.getBoundingClientRect().height; if (h > max) max = h; });
+        leads.forEach((el) => { el.style.minHeight = max + 'px'; });
+      }
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(equalize, 150);
+      });
+      if (document.fonts && document.fonts.ready) { document.fonts.ready.then(equalize); }
+      equalize();
+    })();
+  </script>
+
+</body>
+</html>

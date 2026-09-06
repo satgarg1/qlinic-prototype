@@ -1336,6 +1336,17 @@ a { color: inherit; }
 .tone-purple .item-num { font-size: 46px; }
 .tone-purple .item-lead { font-size: 24px; }
 
+/* Rose + cyan -- Multi-doctor clinics' own two tones. Deliberately not
+   Solo practice's red/green/indigo/teal (reviewed and rejected, so the
+   two segment pages read as visually distinct, not the same page
+   recolored) and not purple (index.html's own "Explore" color) or the
+   amber planned for Diagnostic centers -- each segment keeps a color
+   no other segment uses. */
+.tone-rose .pg-eyebrow, .tone-rose .item-num { color: #be123c; }
+.tone-rose .pg-glow { background: radial-gradient(ellipse 90% 60% at 50% 0%, rgba(190, 18, 60, 0.15) 0%, rgba(190, 18, 60, 0.05) 45%, rgba(190, 18, 60, 0) 75%); }
+.tone-cyan .pg-eyebrow, .tone-cyan .item-num { color: #0e7490; }
+.tone-cyan .pg-glow { background: radial-gradient(ellipse 90% 65% at 50% 0%, rgba(8, 145, 178, 0.16) 0%, rgba(8, 145, 178, 0.06) 45%, rgba(8, 145, 178, 0) 75%); }
+
 /* Dark contrast panel -- a different shell from .pg-section (light paper
    + a colored glow): this one breaks the page's background entirely for
    one section, for a segment page's featured/benefits band, where a
@@ -1383,6 +1394,57 @@ a { color: inherit; }
 .dark-panel.tone-indigo .dark-panel-check { background: rgba(79, 70, 229, 0.30); border: 1px solid rgba(165, 180, 252, 0.5); }
 .dark-panel.tone-indigo .dark-panel-check svg { stroke: #a5b4fc; }
 .dark-panel.tone-indigo .dark-panel-support { color: #c1c3e0; }
+
+.dark-panel.tone-cyan { background: #0b1f26; }
+.dark-panel.tone-cyan .dark-panel-glow { background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(8, 145, 178, 0.40) 0%, rgba(8, 145, 178, 0.12) 45%, rgba(8, 145, 178, 0) 75%); }
+.dark-panel.tone-cyan .dark-panel-eyebrow { color: #67d5e8; }
+
+/* Multi-doctor clinics' own Fix + Included pattern -- Solo practice's
+   single lead+support per card doesn't hold once a card has to carry
+   several parallel facts (one audience gets 4 real points, not one).
+   New pattern, reusable by any future segment page whose content
+   doesn't fit the simpler single-point shape: an .item-card becomes an
+   audience header once, then a numbered .point-list stacked under it.
+   Points across sibling columns are height-equalized by index in the
+   page's own script (see multi-doctor-clinics.html) so support lines
+   share a baseline regardless of how many lines a sibling's lead wraps
+   to -- equalizing the whole .point block, not just .point-lead, so
+   the gap that difference produces lands after a point, never wedged
+   between one point's own lead and support. */
+.audience-head { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 700; font-size: 32px; margin-bottom: 32px; }
+.point-list { display: flex; flex-direction: column; gap: 30px; }
+.point { display: flex; gap: 16px; opacity: 0; transform: translateY(22px); transition: opacity 0.7s cubic-bezier(0.19,1,0.22,1), transform 0.7s cubic-bezier(0.19,1,0.22,1); }
+.point.show { opacity: 1; transform: translateY(0); }
+.point-num { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 700; font-size: 17px; flex-shrink: 0; width: 22px; padding-top: 3px; }
+.point-lead { font-weight: 600; font-size: 19px; line-height: 1.4; margin: 0; }
+.point-support { font-size: 15.5px; line-height: 1.5; color: var(--grey-700); margin: 7px 0 0; }
+
+/* Same point markup reused inside the dark panel for "What's included",
+   grouped under a heading shared across all 4 columns instead of a
+   per-column numeral -- a numeral repeated on every column added
+   nothing once every column had the same count, and read as clutter. */
+.dark-row-group { position: relative; z-index: 1; margin-bottom: 54px; }
+.dark-row-group:last-child { margin-bottom: 0; }
+.dark-row-heading { text-align: center; font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 700; font-size: 32px; letter-spacing: -0.01em; margin-bottom: 34px; }
+.dark-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.dark-col { padding: 0 22px; text-align: left; }
+.dark-col + .dark-col { border-left: 1px solid rgba(255, 255, 255, 0.16); }
+.dark-cell { opacity: 0; transform: translateY(22px); transition: opacity 0.7s cubic-bezier(0.19,1,0.22,1), transform 0.7s cubic-bezier(0.19,1,0.22,1); }
+.dark-cell.show { opacity: 1; transform: translateY(0); }
+.dark-cell .point-lead { font-size: 21px; margin: 0; }
+.dark-cell .point-support { font-size: 16.5px; margin: 8px 0 0; }
+@media (max-width: 900px) {
+  .item-row .point-list { text-align: left; }
+  .dark-row { grid-template-columns: 1fr; row-gap: 36px; }
+  .dark-col { border-left: none !important; text-align: center; }
+}
+
+.tone-cyan .audience-head { color: #0e7490; }
+.tone-cyan .point-lead { color: #0f3d47; }
+.tone-cyan .point-support { color: #4a6b72; }
+.dark-panel.tone-cyan .dark-row-heading { color: #67d5e8; }
+.dark-panel.tone-cyan .dark-cell .point-lead { color: #f2f8f9; }
+.dark-panel.tone-cyan .dark-cell .point-support { color: #93a8ac; }
 
 /* ---------------- Contact page: two-pane dark band ----------------
    Same "image left, form right" pattern as login.html's own two-pane
