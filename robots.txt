@@ -5,6 +5,7 @@ Allow: /contact.html
 Allow: /solo-practice.html
 Allow: /styles.css
 Allow: /sitemap.xml
+Allow: /og-image.png
 Disallow: /
 
 Sitemap: https://clinvision.in/sitemap.xml
