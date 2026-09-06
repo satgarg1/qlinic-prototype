@@ -13,6 +13,13 @@ Allow: /multi-doctor-clinics.png
 Allow: /styles.css
 Allow: /sitemap.xml
 Allow: /og-image.png
+Allow: /hero.png
+Allow: /suite-analytics.png
+Allow: /suite-billing.png
+Allow: /suite-queue.png
+Allow: /suite-records.png
+Allow: /suite-system.png
+Allow: /suite-team.png
 Allow: /resources/
 Disallow: /
 
