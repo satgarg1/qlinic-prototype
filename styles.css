@@ -1465,7 +1465,13 @@ a { color: inherit; }
    .hero-glow on the site, just gold. */
 .article-hero { position: relative; overflow: hidden; max-width: 760px; margin: 0 auto; padding: 64px 6vw 0; text-align: center; }
 .article-hero-glow { position: absolute; width: 900px; height: 900px; border-radius: 50%; top: -420px; left: 50%; transform: translateX(-50%); background: radial-gradient(circle, rgba(201, 151, 62, 0.14) 0%, rgba(201, 151, 62, 0) 68%); pointer-events: none; z-index: 0; }
-.article-hero > * { position: relative; z-index: 1; }
+/* :not() here matters -- an earlier version of this rule targeted every
+   direct child including the glow itself, and since .article-hero-glow
+   and this wildcard rule have equal specificity, this rule (later in
+   source order) was overriding the glow's own position:absolute back to
+   relative, turning a 900px decorative circle into a real 900px-tall
+   block that pushed the actual heading/body text off screen. */
+.article-hero > *:not(.article-hero-glow) { position: relative; z-index: 1; }
 .article-eyebrow { font-size: 16px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #8a6420; margin-bottom: 18px; }
 .article-h1 { font-family: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif; font-weight: 600; font-size: clamp(32px, 4vw, 46px); line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 18px; color: var(--black); }
 .article-sub { font-size: 21px; color: var(--grey-700); line-height: 1.5; max-width: 620px; margin: 0 auto 18px; }
